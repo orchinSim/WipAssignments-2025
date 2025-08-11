@@ -1,0 +1,48 @@
+Postman URls:
+
+1. MovieController URLs:
+
+Operation						URL
+
+Get all movies					GET http://localhost:8080/movies
+Get movies by genre				GET http://localhost:8080/movies/genre/{genre}
+Search movies by title keyword	GET http://localhost:8080/movies/search?keyword=avengers
+Get movies by title length		GET http://localhost:8080/movies/title-length/{length}
+
+ Example:
+
+GET http://localhost:3333/movies/genre/Action
+GET http://localhost:3333/movies/title-length/7
+
+
+2. TheaterController URLs
+Operation	URL
+Get theaters by location	GET http://localhost:8080/theaters/location/{location}
+Get theaters showing a particular movie	GET http://localhost:8080/theaters/movie/{movieId}
+
+📝 Example:
+
+GET http://localhost:3333/theaters/location/Chennai
+GET http://localhost:3333/theaters/movie/1
+
+
+3.CustomerController URL
+Operation	URL
+Get customer by email	GET http://localhost:8080/customers/email?email=example@gmail.com
+
+📝 Example:
+
+GET http://localhost:3333/customers/email?email=john@gmail.com
+
+
+
+4. BookingController URLs
+Operation	URL
+Get bookings by date	GET http://localhost:8080/bookings/date?date=2025-08-06
+Get bookings by customer ID	GET http://localhost:8080/bookings/customer/{customerId}
+Get bookings by movieId and theaterId	GET http://localhost:8080/bookings/movie/{movieId}/theater/{theaterId}
+
+📝 Example:
+GET http://localhost:3333/bookings/date?date=2025-08-06
+GET http://localhost:3333/bookings/customer/1
+GET http://localhost:3333/bookings/movie/2/theater/3
